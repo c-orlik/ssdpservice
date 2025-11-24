@@ -23,4 +23,3 @@ COPY src/ ./src/
 # Set the default command (automatically starts your script)
 CMD ["python", "src/main.py"]
 
-FROM python:3.12-slim
