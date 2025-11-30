@@ -59,7 +59,7 @@ class MyProtocol(aio.SimpleServiceDiscoveryProtocol):
    if(re.match('M-SEARCH',str(request).upper())):
       logging.info("Received M-SEARCH from {}".format(addr))
       logging.info(request);
-      if(re.search('devolo',str(self.getUserAgent(request.headers)).lower())):
+      #if(re.search('devolo',str(self.getUserAgent(request.headers)).lower())):
          logging.info("Fixed User Agent {}".format(self.getUserAgent(request.headers)))
          #if(re.search('urn:dslforum-org:device:InternetGatewayDevice:1',str(request))):
          if(1==1):
